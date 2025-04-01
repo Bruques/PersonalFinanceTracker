@@ -11,7 +11,7 @@ import SwiftUI
 struct PersonalFinanceTrackerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabbarView()
         }
     }
 }

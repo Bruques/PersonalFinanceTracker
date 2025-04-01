@@ -1,1 +1,8 @@
 echo ".DS_Store" >> .gitignore
+
+# Arquivos gerados pelo Xcode
+project.xcworkspace/xcuserdata/
+*.xcuserstate
+
+# Arquivos do macOS
+.DS_Store
