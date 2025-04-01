@@ -16,6 +16,8 @@
 		0EA2EBE82D99EFBF00D27792 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA2EBE72D99EFBF00D27792 /* ProfileView.swift */; };
 		0EA2EBEA2D99F02B00D27792 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA2EBE92D99F02B00D27792 /* TabbarView.swift */; };
 		0EA2EBED2D9A06B800D27792 /* BudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA2EBEC2D9A06B800D27792 /* BudgetView.swift */; };
+		0EA2EBF32D9B888900D27792 /* PersonalFinanceTrackerModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0EA2EBF12D9B888900D27792 /* PersonalFinanceTrackerModel.xcdatamodeld */; };
+		0EA2EBF52D9B891400D27792 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA2EBF42D9B891400D27792 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		0EA2EBE72D99EFBF00D27792 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		0EA2EBE92D99F02B00D27792 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		0EA2EBEC2D9A06B800D27792 /* BudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetView.swift; sourceTree = "<group>"; };
+		0EA2EBF22D9B888900D27792 /* PersonalFinanceTrackerModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersonalFinanceTrackerModel.xcdatamodel; sourceTree = "<group>"; };
+		0EA2EBF42D9B891400D27792 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		0EA2EBCB2D99EB4300D27792 /* PersonalFinanceTracker */ = {
 			isa = PBXGroup;
 			children = (
+				0EA2EBF02D9B874500D27792 /* CoreData */,
 				0EA2EBDB2D99ED0D00D27792 /* Model */,
 				0EA2EBDC2D99ED1400D27792 /* View */,
 				0EA2EBDD2D99ED2000D27792 /* ViewModel */,
@@ -156,6 +161,15 @@
 			path = Budget;
 			sourceTree = "<group>";
 		};
+		0EA2EBF02D9B874500D27792 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				0EA2EBF12D9B888900D27792 /* PersonalFinanceTrackerModel.xcdatamodeld */,
+				0EA2EBF42D9B891400D27792 /* CoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -229,8 +243,10 @@
 				0EA2EBE32D99EE0900D27792 /* HomeView.swift in Sources */,
 				0EA2EBE52D99EF0600D27792 /* TransactionsListView.swift in Sources */,
 				0EA2EBE82D99EFBF00D27792 /* ProfileView.swift in Sources */,
+				0EA2EBF52D9B891400D27792 /* CoreDataStack.swift in Sources */,
 				0EA2EBCF2D99EB4300D27792 /* ContentView.swift in Sources */,
 				0EA2EBED2D9A06B800D27792 /* BudgetView.swift in Sources */,
+				0EA2EBF32D9B888900D27792 /* PersonalFinanceTrackerModel.xcdatamodeld in Sources */,
 				0EA2EBEA2D99F02B00D27792 /* TabbarView.swift in Sources */,
 				0EA2EBCD2D99EB4300D27792 /* PersonalFinanceTrackerApp.swift in Sources */,
 			);
@@ -453,6 +469,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0EA2EBF12D9B888900D27792 /* PersonalFinanceTrackerModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0EA2EBF22D9B888900D27792 /* PersonalFinanceTrackerModel.xcdatamodel */,
+			);
+			currentVersion = 0EA2EBF22D9B888900D27792 /* PersonalFinanceTrackerModel.xcdatamodel */;
+			name = PersonalFinanceTrackerModel.xcdatamodeld;
+			path = /Users/brunomarques/Documents/MyProjects/PersonalFinanceTracker/PersonalFinanceTracker/CoreData/PersonalFinanceTrackerModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0EA2EBC12D99EB4300D27792 /* Project object */;
 }
