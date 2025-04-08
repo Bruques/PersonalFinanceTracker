@@ -12,7 +12,7 @@ class CoreDataStack: ObservableObject {
     static let shared = CoreDataStack()
     
     lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "GestaoEmprestimoModel")
+        let container = NSPersistentContainer(name: "PersonalFinanceTrackerModel")
         container.loadPersistentStores { _, error in
             if let error {
                 fatalError("Failed to load persistent stores: \(error.localizedDescription)")
