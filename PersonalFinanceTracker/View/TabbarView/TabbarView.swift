@@ -13,7 +13,7 @@ struct TabbarView: View {
             homeView
             transactionsListView
             budgetView
-            profileView
+            moreOptionsView
         }
     }
     
@@ -47,12 +47,12 @@ struct TabbarView: View {
             }
     }
     
-    var profileView: some View {
-        ProfileView()
+    var moreOptionsView: some View {
+        MoreOptionsView()
             .tabItem {
                 Label(
-                    title: { Text("Profile") },
-                    icon: { Image(systemName: "person.circle.fill") }
+                    title: { Text("More") },
+                    icon: { Image(systemName: "ellipsis.circle") }
                 )
             }
     }
