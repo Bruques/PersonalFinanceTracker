@@ -18,6 +18,7 @@
 		0EA2EBED2D9A06B800D27792 /* BudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA2EBEC2D9A06B800D27792 /* BudgetView.swift */; };
 		0EA2EBF32D9B888900D27792 /* PersonalFinanceTrackerModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0EA2EBF12D9B888900D27792 /* PersonalFinanceTrackerModel.xcdatamodeld */; };
 		0EA2EBF52D9B891400D27792 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA2EBF42D9B891400D27792 /* CoreDataStack.swift */; };
+		0EBAE5332DA5ED1D00EEF12E /* MoreOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBAE5322DA5ED1D00EEF12E /* MoreOptionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		0EA2EBEC2D9A06B800D27792 /* BudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetView.swift; sourceTree = "<group>"; };
 		0EA2EBF22D9B888900D27792 /* PersonalFinanceTrackerModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersonalFinanceTrackerModel.xcdatamodel; sourceTree = "<group>"; };
 		0EA2EBF42D9B891400D27792 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		0EBAE5322DA5ED1D00EEF12E /* MoreOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreOptionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				0EA2EBE02D99ED4A00D27792 /* TransactionForm */,
 				0EA2EBEB2D9A069C00D27792 /* Budget */,
 				0EA2EBE62D99EFB100D27792 /* Profile */,
+				0EBAE5312DA5ECFD00EEF12E /* More */,
 				0EA2EBE12D99EDE400D27792 /* TabbarView */,
 			);
 			path = View;
@@ -168,6 +171,14 @@
 				0EA2EBF42D9B891400D27792 /* CoreDataStack.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		0EBAE5312DA5ECFD00EEF12E /* More */ = {
+			isa = PBXGroup;
+			children = (
+				0EBAE5322DA5ED1D00EEF12E /* MoreOptionsView.swift */,
+			);
+			path = More;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +259,7 @@
 				0EA2EBED2D9A06B800D27792 /* BudgetView.swift in Sources */,
 				0EA2EBF32D9B888900D27792 /* PersonalFinanceTrackerModel.xcdatamodeld in Sources */,
 				0EA2EBEA2D99F02B00D27792 /* TabbarView.swift in Sources */,
+				0EBAE5332DA5ED1D00EEF12E /* MoreOptionsView.swift in Sources */,
 				0EA2EBCD2D99EB4300D27792 /* PersonalFinanceTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
