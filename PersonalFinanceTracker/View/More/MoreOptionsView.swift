@@ -8,12 +8,26 @@
 import SwiftUI
 
 struct MoreOptionsView: View {
+    @State private var showCategories = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "ellipsis.circle")
-                .font(.largeTitle)
-            Text("More")
-                .font(.title)
+        NavigationStack {
+            VStack {
+                List {
+                    categoriesButton
+                }
+            }
+            .frame(maxWidth: .infinity,
+                   maxHeight: .infinity)
+        }
+    }
+    
+    var categoriesButton: some View {
+        NavigationLink(destination: CategoriesView()) {
+            HStack {
+                Image(systemName: "pencil.and.ellipsis.rectangle")
+                Text("Categorias")
+            }
         }
     }
 }

@@ -19,6 +19,8 @@
 		0EA2EBF32D9B888900D27792 /* PersonalFinanceTrackerModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0EA2EBF12D9B888900D27792 /* PersonalFinanceTrackerModel.xcdatamodeld */; };
 		0EA2EBF52D9B891400D27792 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA2EBF42D9B891400D27792 /* CoreDataStack.swift */; };
 		0EBAE5332DA5ED1D00EEF12E /* MoreOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBAE5322DA5ED1D00EEF12E /* MoreOptionsView.swift */; };
+		0EEAC2062DA7532600D3CEE1 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEAC2042DA7532600D3CEE1 /* CategoriesView.swift */; };
+		0EEAC2082DA7545100D3CEE1 /* AddCategorySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEAC2072DA7545100D3CEE1 /* AddCategorySheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		0EA2EBF22D9B888900D27792 /* PersonalFinanceTrackerModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersonalFinanceTrackerModel.xcdatamodel; sourceTree = "<group>"; };
 		0EA2EBF42D9B891400D27792 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		0EBAE5322DA5ED1D00EEF12E /* MoreOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreOptionsView.swift; sourceTree = "<group>"; };
+		0EEAC2042DA7532600D3CEE1 /* CategoriesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		0EEAC2072DA7545100D3CEE1 /* AddCategorySheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCategorySheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		0EA2EBDC2D99ED1400D27792 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0EEAC2052DA7532600D3CEE1 /* Categories */,
 				0EA2EBDE2D99ED3700D27792 /* Home */,
 				0EA2EBDF2D99ED3F00D27792 /* TransactionList */,
 				0EA2EBE02D99ED4A00D27792 /* TransactionForm */,
@@ -181,6 +186,15 @@
 			path = More;
 			sourceTree = "<group>";
 		};
+		0EEAC2052DA7532600D3CEE1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0EEAC2072DA7545100D3CEE1 /* AddCategorySheet.swift */,
+				0EEAC2042DA7532600D3CEE1 /* CategoriesView.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -252,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EA2EBE32D99EE0900D27792 /* HomeView.swift in Sources */,
+				0EEAC2082DA7545100D3CEE1 /* AddCategorySheet.swift in Sources */,
 				0EA2EBE52D99EF0600D27792 /* TransactionsListView.swift in Sources */,
 				0EA2EBE82D99EFBF00D27792 /* ProfileView.swift in Sources */,
 				0EA2EBF52D9B891400D27792 /* CoreDataStack.swift in Sources */,
@@ -259,6 +274,7 @@
 				0EA2EBED2D9A06B800D27792 /* BudgetView.swift in Sources */,
 				0EA2EBF32D9B888900D27792 /* PersonalFinanceTrackerModel.xcdatamodeld in Sources */,
 				0EA2EBEA2D99F02B00D27792 /* TabbarView.swift in Sources */,
+				0EEAC2062DA7532600D3CEE1 /* CategoriesView.swift in Sources */,
 				0EBAE5332DA5ED1D00EEF12E /* MoreOptionsView.swift in Sources */,
 				0EA2EBCD2D99EB4300D27792 /* PersonalFinanceTrackerApp.swift in Sources */,
 			);
