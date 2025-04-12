@@ -1,7 +1,16 @@
+//
+//  CategoriesView.swift
+//  PersonalFinanceTracker
+//
+//  Created by Bruno Marques on 11/04/25.
+//
+
 import SwiftUI
+import CoreData
 
 struct CategoriesView: View {
     @State private var showingAddSheet = false
+    @State private var categories: [Category] = []
     
     var body: some View {
         ZStack {
@@ -12,13 +21,16 @@ struct CategoriesView: View {
                 
                 List {
                     // Aqui você pode adicionar suas categorias
-                    Text("Categoria 1")
-                    Text("Categoria 2")
-                    Text("Categoria 3")
+                    ForEach(categories, id: \.id) { category in
+                        Text(category.title ?? "")
+                    }
+                }
+                .refreshable {
+                    self.fetchCategories()
                 }
             }
             
-            // Botão flutuante
+            // TODO: - Colocar isso em um design system
             VStack {
                 Spacer()
                 HStack {
@@ -39,10 +51,28 @@ struct CategoriesView: View {
                 }
             }
         }
+        .onAppear {
+            self.fetchCategories()
+            
+        }
         .sheet(isPresented: $showingAddSheet) {
-            AddCategorySheet(isPresented: $showingAddSheet)
+            AddCategorySheet(isPresented: $showingAddSheet) { category in
+                self.categories.append(category)
+            }
         }
     }
+}
+
+extension CategoriesView {
+    private func fetchCategories() {
+            let request = NSFetchRequest<Category>(entityName: "Category")
+            do {
+                let response = try CoreDataStack.shared.persistentContainer.viewContext.fetch(request)
+                categories = response
+            } catch {
+                print("Fetch contracts error: \(error.localizedDescription)")
+            }
+        }
 }
 
 #Preview {

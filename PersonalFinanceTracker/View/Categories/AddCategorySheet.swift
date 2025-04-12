@@ -1,8 +1,18 @@
+//
+//  AddCategorySheet.swift
+//  PersonalFinanceTracker
+//
+//  Created by Bruno Marques on 11/04/25.
+//
+
 import SwiftUI
 
 struct AddCategorySheet: View {
     @Binding var isPresented: Bool
     @State private var categoryName: String = ""
+    private let context = CoreDataStack.shared.persistentContainer.viewContext
+    
+    public let completion: (Category) -> Void
     
     var body: some View {
         NavigationView {
@@ -18,8 +28,7 @@ struct AddCategorySheet: View {
                     isPresented = false
                 },
                 trailing: Button("Salvar") {
-                    // Aqui você pode adicionar a lógica para salvar a categoria
-                    isPresented = false
+                    saveCategory()
                 }
                 .disabled(categoryName.isEmpty)
             )
@@ -28,6 +37,16 @@ struct AddCategorySheet: View {
     }
 }
 
+extension AddCategorySheet {
+    private func saveCategory() {
+        let category = Category(context: context)
+        category.title = categoryName
+        CoreDataStack.shared.save()
+        completion(category)
+        isPresented = false
+    }
+}
+
 #Preview {
-    AddCategorySheet(isPresented: .constant(true))
+    AddCategorySheet(isPresented: .constant(true), completion: { _ in })
 }
