@@ -11,6 +11,7 @@ import CoreData
 struct TransactionsListView: View {
     @State var showTransactionForm: Bool = false
     @State var transactions: [Transaction] = []
+    let context = CoreDataStack.shared.persistentContainer.viewContext
     
     var body: some View {
         NavigationStack {
@@ -22,6 +23,12 @@ struct TransactionsListView: View {
                         Text("Category: \(transaction.category?.title ?? "")")
                     }
                 }
+                .onDelete(perform: { indexSet in
+                    guard let index = indexSet.first else { return }
+                    context.delete(transactions[index])
+                    CoreDataStack.shared.save()
+                    self.fetchTransactions()
+                })
             }
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
