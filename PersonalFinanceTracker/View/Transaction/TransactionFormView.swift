@@ -97,6 +97,7 @@ extension TransactionFormView {
         transaction.ammount = ammount
         transaction.date = date
         transaction.title = title
+        transaction.category = selectedCategory
         CoreDataStack.shared.save()
         completion(transaction)
         dismiss()
