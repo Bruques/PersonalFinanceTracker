@@ -7,9 +7,10 @@
 
 import SwiftUI
 
-struct AddCategorySheet: View {
+struct CategoriesFormView: View {
     @Binding var isPresented: Bool
     @State private var categoryName: String = ""
+    @FocusState private var isFocused: Bool
     private let context = CoreDataStack.shared.persistentContainer.viewContext
     
     public let completion: (Category) -> Void
@@ -19,6 +20,10 @@ struct AddCategorySheet: View {
             Form {
                 Section {
                     TextField("Nome da categoria", text: $categoryName)
+                        .focused($isFocused)
+                        .onAppear {
+                            isFocused = true
+                        }
                 }
             }
             .navigationTitle("Nova Categoria")
@@ -37,7 +42,7 @@ struct AddCategorySheet: View {
     }
 }
 
-extension AddCategorySheet {
+extension CategoriesFormView {
     private func saveCategory() {
         let category = Category(context: context)
         category.title = categoryName
@@ -48,5 +53,5 @@ extension AddCategorySheet {
 }
 
 #Preview {
-    AddCategorySheet(isPresented: .constant(true), completion: { _ in })
+    CategoriesFormView(isPresented: .constant(true), completion: { _ in })
 }

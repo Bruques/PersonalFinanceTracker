@@ -8,9 +8,10 @@
 import SwiftUI
 import CoreData
 
-struct CategoriesView: View {
+struct CategoriesListView: View {
     @State private var showingAddSheet = false
     @State private var categories: [Category] = []
+    let context = CoreDataStack.shared.persistentContainer.viewContext
     
     var body: some View {
         ZStack {
@@ -18,18 +19,21 @@ struct CategoriesView: View {
                 Text("Categorias")
                     .font(.title)
                     .padding()
-                
                 List {
-                    // Aqui você pode adicionar suas categorias
                     ForEach(categories, id: \.id) { category in
                         Text(category.title ?? "")
                     }
+                    .onDelete(perform: { indexSet in
+                        guard let index = indexSet.first else { return }
+                        context.delete(categories[index])
+                        CoreDataStack.shared.save()
+                        fetchCategories()
+                    })
                 }
                 .refreshable {
-                    self.fetchCategories()
+                    fetchCategories()
                 }
             }
-            
             // TODO: - Colocar isso em um design system
             VStack {
                 Spacer()
@@ -52,18 +56,17 @@ struct CategoriesView: View {
             }
         }
         .onAppear {
-            self.fetchCategories()
-            
+            fetchCategories()
         }
         .sheet(isPresented: $showingAddSheet) {
-            AddCategorySheet(isPresented: $showingAddSheet) { category in
+            CategoriesFormView(isPresented: $showingAddSheet) { category in
                 self.categories.append(category)
             }
         }
     }
 }
 
-extension CategoriesView {
+extension CategoriesListView {
     private func fetchCategories() {
         let request = NSFetchRequest<Category>(entityName: "Category")
         do {
@@ -76,5 +79,5 @@ extension CategoriesView {
 }
 
 #Preview {
-    CategoriesView()
+    CategoriesListView()
 }
