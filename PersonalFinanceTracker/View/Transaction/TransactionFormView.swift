@@ -11,7 +11,7 @@ import CoreData
 struct TransactionFormView: View {
     @Environment(\.dismiss) var dismiss
     @FocusState private var isFocused: Bool
-    @State var ammount: String = ""
+    @State var ammount: Double = 0.0
     @State var date: Date = Date()
     @State var title: String = ""
     @State var categories: [Category] = []
@@ -22,12 +22,11 @@ struct TransactionFormView: View {
     var body: some View {
         NavigationStack {
             Form {
-                TextField("Valor da despesa", text: $ammount)
+                MoneyTextField(value: $ammount)
                     .focused($isFocused)
-                    .onAppear(perform: {
+                    .onAppear {
                         isFocused = true
-                    })
-                    .keyboardType(.decimalPad)
+                    }
                 Picker("Categorias", selection: $selectedCategory) {
                     ForEach(categories, id: \.id) { category in
                         Text(category.title ?? "Sem título")
@@ -75,7 +74,7 @@ struct TransactionFormView: View {
 
 extension TransactionFormView {
     private func isSaveButtonEnabled() -> Bool {
-        return !ammount.isEmpty && !title.isEmpty
+        return ammount != 0.0 && !title.isEmpty
     }
     
     private func fetchCategories() {
@@ -90,9 +89,6 @@ extension TransactionFormView {
     }
     
     private func saveTransaction() {
-        guard let ammount = Double(ammount) else {
-            return
-        }
         let transaction = Transaction(context: CoreDataStack.shared.persistentContainer.viewContext)
         transaction.ammount = ammount
         transaction.date = date
@@ -106,4 +102,38 @@ extension TransactionFormView {
 
 #Preview {
     TransactionFormView() { _ in }
+}
+
+
+
+
+// TODO: - Colocar isso em um Design System
+// TODO: - On the Future, allow this TF to use different currencies
+struct MoneyTextField: View {
+    @Binding var value: Double
+    @State private var internalText: String = ""
+    
+    private let formatter: NumberFormatter = {
+        let f = NumberFormatter()
+        f.locale = Locale(identifier: "pt_BR")
+        f.numberStyle = .currency
+        f.maximumFractionDigits = 2
+        f.minimumFractionDigits = 2
+        f.currencySymbol = "R$ "
+        return f
+    }()
+    
+    var body: some View {
+        TextField("R$ 0,00", text: $internalText)
+            .keyboardType(.numberPad)
+            .onChange(of: internalText) { newValue in
+                let digits = newValue.filter { $0.isNumber }
+                let double = (Double(digits) ?? 0) / 100
+                value = double
+                internalText = formatter.string(from: NSNumber(value: double)) ?? ""
+            }
+            .onAppear {
+                internalText = formatter.string(from: NSNumber(value: value)) ?? ""
+            }
+    }
 }

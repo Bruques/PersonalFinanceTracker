@@ -17,11 +17,24 @@ struct TransactionsListView: View {
         NavigationStack {
             List {
                 ForEach(transactions, id: \.id) { transaction in
-                    VStack {
+                    VStack(spacing: 4) {
                         Text(transaction.title ?? "")
-                        Text("\(transaction.ammount)")
-                        Text("Category: \(transaction.category?.title ?? "")")
+                            .font(.title3)
+                            .bold()
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        Text("\(transaction.date?.formatted(.dateTime.day().month().year()) ?? Date().formatted())")
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        HStack {
+                            Text(transaction.category?.title ?? "")
+                                .font(.title2)
+                            Spacer()
+                            Text("\(transaction.ammount.formatted(.currency(code: "BRL")))")
+                                .font(.title3)
+                                .bold()
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
                     }
+                    .frame(maxWidth: .infinity)
                 }
                 .onDelete(perform: { indexSet in
                     guard let index = indexSet.first else { return }
