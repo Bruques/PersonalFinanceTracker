@@ -65,14 +65,14 @@ struct CategoriesView: View {
 
 extension CategoriesView {
     private func fetchCategories() {
-            let request = NSFetchRequest<Category>(entityName: "Category")
-            do {
-                let response = try CoreDataStack.shared.persistentContainer.viewContext.fetch(request)
-                categories = response
-            } catch {
-                print("Fetch contracts error: \(error.localizedDescription)")
-            }
+        let request = NSFetchRequest<Category>(entityName: "Category")
+        do {
+            let response = try CoreDataStack.shared.persistentContainer.viewContext.fetch(request)
+            categories = response
+        } catch {
+            print("Fetch contracts error: \(error.localizedDescription)")
         }
+    }
 }
 
 #Preview {
