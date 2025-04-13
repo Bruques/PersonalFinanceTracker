@@ -19,6 +19,7 @@
 		0EA2EBF32D9B888900D27792 /* PersonalFinanceTrackerModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0EA2EBF12D9B888900D27792 /* PersonalFinanceTrackerModel.xcdatamodeld */; };
 		0EA2EBF52D9B891400D27792 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA2EBF42D9B891400D27792 /* CoreDataStack.swift */; };
 		0EBAE5332DA5ED1D00EEF12E /* MoreOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBAE5322DA5ED1D00EEF12E /* MoreOptionsView.swift */; };
+		0EE82FB42DAB3D750043FE8E /* TransactionFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE82FB32DAB3D750043FE8E /* TransactionFormView.swift */; };
 		0EEAC2062DA7532600D3CEE1 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEAC2042DA7532600D3CEE1 /* CategoriesView.swift */; };
 		0EEAC2082DA7545100D3CEE1 /* AddCategorySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEAC2072DA7545100D3CEE1 /* AddCategorySheet.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		0EA2EBF22D9B888900D27792 /* PersonalFinanceTrackerModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersonalFinanceTrackerModel.xcdatamodel; sourceTree = "<group>"; };
 		0EA2EBF42D9B891400D27792 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		0EBAE5322DA5ED1D00EEF12E /* MoreOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreOptionsView.swift; sourceTree = "<group>"; };
+		0EE82FB32DAB3D750043FE8E /* TransactionFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionFormView.swift; sourceTree = "<group>"; };
 		0EEAC2042DA7532600D3CEE1 /* CategoriesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		0EEAC2072DA7545100D3CEE1 /* AddCategorySheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCategorySheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,8 +107,7 @@
 			children = (
 				0EEAC2052DA7532600D3CEE1 /* Categories */,
 				0EA2EBDE2D99ED3700D27792 /* Home */,
-				0EA2EBDF2D99ED3F00D27792 /* TransactionList */,
-				0EA2EBE02D99ED4A00D27792 /* TransactionForm */,
+				0EA2EBDF2D99ED3F00D27792 /* Transaction */,
 				0EA2EBEB2D9A069C00D27792 /* Budget */,
 				0EA2EBE62D99EFB100D27792 /* Profile */,
 				0EBAE5312DA5ECFD00EEF12E /* More */,
@@ -130,19 +131,13 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		0EA2EBDF2D99ED3F00D27792 /* TransactionList */ = {
+		0EA2EBDF2D99ED3F00D27792 /* Transaction */ = {
 			isa = PBXGroup;
 			children = (
 				0EA2EBE42D99EF0600D27792 /* TransactionsListView.swift */,
+				0EE82FB32DAB3D750043FE8E /* TransactionFormView.swift */,
 			);
-			path = TransactionList;
-			sourceTree = "<group>";
-		};
-		0EA2EBE02D99ED4A00D27792 /* TransactionForm */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TransactionForm;
+			path = Transaction;
 			sourceTree = "<group>";
 		};
 		0EA2EBE12D99EDE400D27792 /* TabbarView */ = {
@@ -274,6 +269,7 @@
 				0EA2EBED2D9A06B800D27792 /* BudgetView.swift in Sources */,
 				0EA2EBF32D9B888900D27792 /* PersonalFinanceTrackerModel.xcdatamodeld in Sources */,
 				0EA2EBEA2D99F02B00D27792 /* TabbarView.swift in Sources */,
+				0EE82FB42DAB3D750043FE8E /* TransactionFormView.swift in Sources */,
 				0EEAC2062DA7532600D3CEE1 /* CategoriesView.swift in Sources */,
 				0EBAE5332DA5ED1D00EEF12E /* MoreOptionsView.swift in Sources */,
 				0EA2EBCD2D99EB4300D27792 /* PersonalFinanceTrackerApp.swift in Sources */,
