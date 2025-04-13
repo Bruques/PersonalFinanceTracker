@@ -23,7 +23,7 @@ struct MoreOptionsView: View {
     }
     
     var categoriesButton: some View {
-        NavigationLink(destination: CategoriesView()) {
+        NavigationLink(destination: CategoriesListView()) {
             HStack {
                 Image(systemName: "pencil.and.ellipsis.rectangle")
                 Text("Categorias")
