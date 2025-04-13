@@ -1,0 +1,13 @@
+name: PersonalFinanceTracker
+options:
+  bundleIdPrefix: ${BUNDLE_PREFIX}
+targets:
+  PersonalFinanceTracker:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources: 
+      - PersonalFinanceTracker
+    settings:
+      CODE_SIGN_STYLE: Automatic
+      DEVELOPMENT_TEAM: ${MY_DEVELOPMENT_TEAM}
