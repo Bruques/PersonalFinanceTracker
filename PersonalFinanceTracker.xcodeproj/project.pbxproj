@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0647EDB19A533E92EADA26ED /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89877E6E136E2E468E29ADE9 /* ProfileView.swift */; };
+		2268A9C253EC3F40D411C7E8 /* TransactionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1E483AF47A8EB2DF78EEE5 /* TransactionsListView.swift */; };
+		518E7284C6E9D9EF09825B92 /* CategoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7A12ECAB54A39938D5E723 /* CategoriesListView.swift */; };
+		56CF89935ED521285691AB8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8CFF4E537715994033EAD2D /* Preview Assets.xcassets */; };
+		830B9F459FB25681146D9BDD /* PersonalFinanceTrackerModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B6EB8DCEEC27B0A0C13C769 /* PersonalFinanceTrackerModel.xcdatamodeld */; };
+		88E3E6F4BDA7F505AF45220E /* TransactionFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53B3D7570F4D3049786ABE3 /* TransactionFormView.swift */; };
+		9F34513278C830732F168354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B66431311C76CB5F041A0FE /* Assets.xcassets */; };
+		A76854C61778FBEE3706BCF5 /* CategoriesFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788CFCA5165B6551C8C1BAB3 /* CategoriesFormView.swift */; };
+		A9A430B29C7B7397720BA5FD /* BudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD6A0208777B958B7357D17 /* BudgetView.swift */; };
+		AF0F824E5989AC04E04844BF /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7084380DA5DCA9B230969A2A /* CoreDataStack.swift */; };
+		E471B401934AB2C89843419F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACBC5CE5042506C427186D8 /* HomeView.swift */; };
+		EC7EE30683CB6B189A01514D /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DF3CD68079109604AD7C4D /* TabbarView.swift */; };
+		F14D559B9E63774312F4CA69 /* TransactionFormViewFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A697555B33D0C9C57B77239 /* TransactionFormViewFake.swift */; };
+		F55667964BDFA59CF929C712 /* MoreOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4B6E717FF7C09B9B5B650 /* MoreOptionsView.swift */; };
+		FF73CA1B02EBE5804479F5A5 /* PersonalFinanceTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F0C8F7E0C3997244D42DAB /* PersonalFinanceTrackerApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B66431311C76CB5F041A0FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27DF3CD68079109604AD7C4D /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		2FD6A0208777B958B7357D17 /* BudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetView.swift; sourceTree = "<group>"; };
+		46D63A8CD42E30F85EA58715 /* PersonalFinanceTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalFinanceTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A3CAD95ADA26B3E16F3B5D2 /* PersonalFinanceTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PersonalFinanceTracker.entitlements; sourceTree = "<group>"; };
+		5A697555B33D0C9C57B77239 /* TransactionFormViewFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionFormViewFake.swift; sourceTree = "<group>"; };
+		6E1E483AF47A8EB2DF78EEE5 /* TransactionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListView.swift; sourceTree = "<group>"; };
+		7084380DA5DCA9B230969A2A /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		788CFCA5165B6551C8C1BAB3 /* CategoriesFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesFormView.swift; sourceTree = "<group>"; };
+		89877E6E136E2E468E29ADE9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C046940F40578AC05DA30DBD /* PersonalFinanceTrackerModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersonalFinanceTrackerModel.xcdatamodel; sourceTree = "<group>"; };
+		CD7A12ECAB54A39938D5E723 /* CategoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesListView.swift; sourceTree = "<group>"; };
+		D8CFF4E537715994033EAD2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D9F0C8F7E0C3997244D42DAB /* PersonalFinanceTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalFinanceTrackerApp.swift; sourceTree = "<group>"; };
+		DACBC5CE5042506C427186D8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EDF4B6E717FF7C09B9B5B650 /* MoreOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreOptionsView.swift; sourceTree = "<group>"; };
+		F53B3D7570F4D3049786ABE3 /* TransactionFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionFormView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		033A0D915D5B79875E3B4E0D /* Budget */ = {
+			isa = PBXGroup;
+			children = (
+				2FD6A0208777B958B7357D17 /* BudgetView.swift */,
+			);
+			path = Budget;
+			sourceTree = "<group>";
+		};
+		3BEE7DE02A0A529904033E57 /* TabbarView */ = {
+			isa = PBXGroup;
+			children = (
+				27DF3CD68079109604AD7C4D /* TabbarView.swift */,
+			);
+			path = TabbarView;
+			sourceTree = "<group>";
+		};
+		50E023541C4DEFBD4DC3632A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				7084380DA5DCA9B230969A2A /* CoreDataStack.swift */,
+				0B6EB8DCEEC27B0A0C13C769 /* PersonalFinanceTrackerModel.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		78C454E2C349E1A08994D7C7 /* PersonalFinanceTracker */ = {
+			isa = PBXGroup;
+			children = (
+				0B66431311C76CB5F041A0FE /* Assets.xcassets */,
+				4A3CAD95ADA26B3E16F3B5D2 /* PersonalFinanceTracker.entitlements */,
+				D9F0C8F7E0C3997244D42DAB /* PersonalFinanceTrackerApp.swift */,
+				50E023541C4DEFBD4DC3632A /* CoreData */,
+				D35EF069CEB54BF0319C4BD5 /* Preview Content */,
+				F31E0EE802F3C9691BA18DCD /* View */,
+			);
+			path = PersonalFinanceTracker;
+			sourceTree = "<group>";
+		};
+		A83E774306D5201126FA45E3 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				788CFCA5165B6551C8C1BAB3 /* CategoriesFormView.swift */,
+				CD7A12ECAB54A39938D5E723 /* CategoriesListView.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		AFB50F21E382FF2C661ED431 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				EDF4B6E717FF7C09B9B5B650 /* MoreOptionsView.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		BCCF7B5189972D216DBF4502 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DACBC5CE5042506C427186D8 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D35EF069CEB54BF0319C4BD5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D8CFF4E537715994033EAD2D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E32C5C5A29E7260B6FEC9A7F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				89877E6E136E2E468E29ADE9 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		EA489A983464A8689100C1A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46D63A8CD42E30F85EA58715 /* PersonalFinanceTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC2FADCC302C37B823F88B8A = {
+			isa = PBXGroup;
+			children = (
+				78C454E2C349E1A08994D7C7 /* PersonalFinanceTracker */,
+				EA489A983464A8689100C1A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDE4AA7ECF17EAA20F5C152B /* TransactionForm */ = {
+			isa = PBXGroup;
+			children = (
+				5A697555B33D0C9C57B77239 /* TransactionFormViewFake.swift */,
+			);
+			path = TransactionForm;
+			sourceTree = "<group>";
+		};
+		F31E0EE802F3C9691BA18DCD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				033A0D915D5B79875E3B4E0D /* Budget */,
+				A83E774306D5201126FA45E3 /* Categories */,
+				BCCF7B5189972D216DBF4502 /* Home */,
+				AFB50F21E382FF2C661ED431 /* More */,
+				E32C5C5A29E7260B6FEC9A7F /* Profile */,
+				3BEE7DE02A0A529904033E57 /* TabbarView */,
+				F63D15B41ADD2F7ED055EF8D /* Transaction */,
+				EDE4AA7ECF17EAA20F5C152B /* TransactionForm */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F63D15B41ADD2F7ED055EF8D /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				F53B3D7570F4D3049786ABE3 /* TransactionFormView.swift */,
+				6E1E483AF47A8EB2DF78EEE5 /* TransactionsListView.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B0187779F1629C7C4B77240 /* PersonalFinanceTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D809E2133146354D5BE9EBC /* Build configuration list for PBXNativeTarget "PersonalFinanceTracker" */;
+			buildPhases = (
+				30DA47EAC9308631E06EC429 /* Sources */,
+				D6F5865A87DC209F10A876D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PersonalFinanceTracker;
+			productName = PersonalFinanceTracker;
+			productReference = 46D63A8CD42E30F85EA58715 /* PersonalFinanceTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		852DF7207FCBAD8850C63213 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3B0187779F1629C7C4B77240 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0DA91BB991112B3B7739ADD7 /* Build configuration list for PBXProject "PersonalFinanceTracker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = EC2FADCC302C37B823F88B8A;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B0187779F1629C7C4B77240 /* PersonalFinanceTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6F5865A87DC209F10A876D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F34513278C830732F168354 /* Assets.xcassets in Resources */,
+				56CF89935ED521285691AB8C /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30DA47EAC9308631E06EC429 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9A430B29C7B7397720BA5FD /* BudgetView.swift in Sources */,
+				A76854C61778FBEE3706BCF5 /* CategoriesFormView.swift in Sources */,
+				518E7284C6E9D9EF09825B92 /* CategoriesListView.swift in Sources */,
+				AF0F824E5989AC04E04844BF /* CoreDataStack.swift in Sources */,
+				E471B401934AB2C89843419F /* HomeView.swift in Sources */,
+				F55667964BDFA59CF929C712 /* MoreOptionsView.swift in Sources */,
+				FF73CA1B02EBE5804479F5A5 /* PersonalFinanceTrackerApp.swift in Sources */,
+				830B9F459FB25681146D9BDD /* PersonalFinanceTrackerModel.xcdatamodeld in Sources */,
+				0647EDB19A533E92EADA26ED /* ProfileView.swift in Sources */,
+				EC7EE30683CB6B189A01514D /* TabbarView.swift in Sources */,
+				88E3E6F4BDA7F505AF45220E /* TransactionFormView.swift in Sources */,
+				F14D559B9E63774312F4CA69 /* TransactionFormViewFake.swift in Sources */,
+				2268A9C253EC3F40D411C7E8 /* TransactionsListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		86CC53449DA0510AB19D75E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bruques.PersonalFinanceTracker;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B187BB4D6B4BCB890A1D16B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bruques.PersonalFinanceTracker;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E40F746544ACEF98E76AAF38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = BGLPVLYQQ6;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFO_PLIST_FILE = PersonalFinanceTracker/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EF5F9BC9800DDC220D82B3AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = BGLPVLYQQ6;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFO_PLIST_FILE = PersonalFinanceTracker/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DA91BB991112B3B7739ADD7 /* Build configuration list for PBXProject "PersonalFinanceTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E40F746544ACEF98E76AAF38 /* Debug */,
+				EF5F9BC9800DDC220D82B3AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4D809E2133146354D5BE9EBC /* Build configuration list for PBXNativeTarget "PersonalFinanceTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B187BB4D6B4BCB890A1D16B5 /* Debug */,
+				86CC53449DA0510AB19D75E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0B6EB8DCEEC27B0A0C13C769 /* PersonalFinanceTrackerModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C046940F40578AC05DA30DBD /* PersonalFinanceTrackerModel.xcdatamodel */,
+			);
+			currentVersion = C046940F40578AC05DA30DBD /* PersonalFinanceTrackerModel.xcdatamodel */;
+			path = PersonalFinanceTrackerModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 852DF7207FCBAD8850C63213 /* Project object */;
+}
