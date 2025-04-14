@@ -1,14 +1,9 @@
 echo ".DS_Store" >> .gitignore
 
-# Variaveis de ambiente
-.env
-
 # Arquivos gerados pelo Xcode
 project.xcworkspace/xcuserdata/
 *.xcuserstate
 *.xcuserdatad/
-*.xcodeproj/
-
 
 # Arquivos do macOS
 .DS_Store
